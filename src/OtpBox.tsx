@@ -6,7 +6,7 @@ import {
   StyleProp,
   ViewStyle,
   TextStyle,
-  PressableProps
+  PressableProps,
 } from 'react-native';
 import { optBoxStyles } from './styles';
 
@@ -89,7 +89,12 @@ const OtpBox: React.FunctionComponent<OtpBoxProps> = ({
     );
   };
   return (
-    <Pressable accessibilityHint="Set OTP box to be focused" style={optBoxStyles.boxContainer} onPress={onPress} {...rest} >
+    <Pressable
+      accessibilityHint="Set OTP box to be focused"
+      style={optBoxStyles.boxContainer}
+      onPress={onPress}
+      {...rest}
+    >
       {boxes.map(otpBoxDigit)}
     </Pressable>
   );

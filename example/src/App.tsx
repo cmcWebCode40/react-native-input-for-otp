@@ -7,19 +7,22 @@ export default function App() {
   const [code, setCode] = React.useState<string>('');
   const [isOTPReady, setOTPReady] = React.useState(false);
 
+  const cb = React.useCallback((isReady: boolean) => {
+    setOTPReady(isReady);
+  }, []);
 
   React.useEffect(() => {
-  if (isOTPReady) {
-    console.log('OPT completely entered'); 
-  }
-  }, [isOTPReady])
+    if (isOTPReady) {
+      console.log('OPT completely entered');
+    }
+  }, [isOTPReady]);
 
   return (
     <View style={styles.container}>
       <OTPInput
         code={code}
         maxInputLenght={4}
-        onOtpReady={setOTPReady}
+        onOtpReady={cb}
         onSetCode={setCode}
       />
     </View>

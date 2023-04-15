@@ -29,7 +29,8 @@ type OTPInputProps = {
 } & Pick<
   React.ComponentPropsWithRef<typeof OtpBox>,
   'boxFocusedStyle' | 'boxStyle' | 'boxTextStyle'
-> & ViewProps;
+> &
+  ViewProps;
 
 const OTPInput: React.FunctionComponent<OTPInputProps> = ({
   maxInputLenght,
@@ -65,7 +66,7 @@ const OTPInput: React.FunctionComponent<OTPInputProps> = ({
     return () => {
       onOtpReady(false);
     };
-  }, [code]);
+  }, [code, maxInputLenght, onOtpReady]);
 
   return (
     <View style={otpInputStyles.container} {...rest}>

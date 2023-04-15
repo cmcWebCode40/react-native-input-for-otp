@@ -15,7 +15,7 @@ describe('test for OTP input', () => {
     onSetCode: jest.fn(),
   };
 
-  test.skip('Should OTP input render correctly', () => {
+  test('Should OTP input render correctly', () => {
     const componentTree = renderer
       .create(<OTPInput {...defaultProps} />)
       .toJSON();

@@ -9,17 +9,15 @@ describe('Test for OTP boxes', () => {
   const defaultProps = {
     maxInputLenght: 4,
     code: '',
-    isBoxFocused: false,
+    isBoxFocused: true,
     boxes: [1, 2, 3, 4],
     onPress: jest.fn(),
   };
 
-  test.only('Should OTP box render correctly', () => {
+  test('Should OTP box render correctly', () => {
     const { root } = render(<OtpBox {...defaultProps} />);
     expect(root._fiber.stateNode.children.length).toBe(
       defaultProps.maxInputLenght
     );
   });
-
-  test.skip('Should OTP box render correctly', () => {});
 });
