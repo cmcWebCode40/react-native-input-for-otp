@@ -28,9 +28,9 @@ type OTPInputProps = {
   onSetCode: Dispatch<SetStateAction<string>>;
 
   /**
-   *  hide text entry 
+   *  hide text entry
    */
-  secureTextEntry?:boolean
+  secureTextEntry?: boolean;
 } & Pick<
   React.ComponentPropsWithRef<typeof OtpBox>,
   'boxFocusedStyle' | 'boxStyle' | 'boxTextStyle'
