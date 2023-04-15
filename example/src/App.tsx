@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import OTPInput from 'react-native-otp-input-fields';
+import OTPInput from 'react-native-input-for-otp';
 
 export default function App() {
   const [code, setCode] = React.useState<string>('');

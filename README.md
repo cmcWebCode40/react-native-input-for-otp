@@ -1,6 +1,6 @@
-# react-native-otp-input-fields
+# react-native-input-for-otp
 
-react-native-otp-input-fields
+react-native-input-for-otp
 
 A Light weight simple and flexible react native opt input
 
@@ -10,11 +10,11 @@ A Light weight simple and flexible react native opt input
 
 ```sh
 # npm 
-npm install react-native-otp-input-fields
+npm install react-native-input-for-otp
 
 # yarn 
 
-yarn add  install react-native-otp-input-fields
+yarn add  install react-native-input-for-otp
 
 ```
 
@@ -25,7 +25,7 @@ yarn add  install react-native-otp-input-fields
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import OTPInput from 'react-native-otp-input-fields';
+import OTPInput from 'react-native-input-for-otp';
 
 export default function App() {
   const [code, setCode] = React.useState < string > '';
@@ -59,8 +59,6 @@ const styles = StyleSheet.create({
 ```
 
 ### Props
-
-1. `vda-account`
 
 | Props           | Type         | Required | Description                       |
 | --------------- | ------------ | -------- | --------------------------------- |

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-otp-input-fields",
+  "name": "react-native-input-for-otp",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -40,13 +40,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/cmcWebCode40/react-native-otp-input-fields",
+  "repository": "https://github.com/cmcWebCode40/react-native-input-for-otp",
   "author": "Chinweike Michael Chinonso <infinity_michael@yahoo.com> (https://github.com/cmcWebCode40)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cmcWebCode40/react-native-otp-input-fields/issues"
+    "url": "https://github.com/cmcWebCode40/react-native-input-for-otp/issues"
   },
-  "homepage": "https://github.com/cmcWebCode40/react-native-otp-input-fields#readme",
+  "homepage": "https://github.com/cmcWebCode40/react-native-input-for-otp#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
